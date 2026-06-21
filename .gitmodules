@@ -1,12 +1,12 @@
 [submodule "packages/automation-motion"]
 	path = packages/automation-motion
-	url = https://github.com/TomLXXVI/automation-motion.git
+	url = git@github.com:TomLXXVI/automation-motion.git
 [submodule "packages/pyberryplc"]
 	path = packages/pyberryplc
-	url = https://github.com/TomLXXVI/pyberryplc.git
+	url = git@github.com:TomLXXVI/pyberryplc.git
 [submodule "packages/pyberryplc-stepper"]
 	path = packages/pyberryplc-stepper
-	url = https://github.com/TomLXXVI/pyberryplc-stepper.git
+	url = git@github.com:TomLXXVI/pyberryplc-stepper.git
 [submodule "packages/python-robot"]
 	path = packages/python-robot
-	url = https://github.com/TomLXXVI/python-robot.git
+	url = git@github.com:TomLXXVI/python-robot.git
