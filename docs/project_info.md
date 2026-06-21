@@ -206,7 +206,7 @@ python -c "import pyberryplc_stepper; print(pyberryplc_stepper.__file__)"
 python -c "import python_robot; print(python_robot.__file__)"
 ```
 
-### Raspberry Pi
+### Eerste installatie op Raspberry Pi
 
 Op de Pi is SSH aanbevolen voor GitHub:
 
