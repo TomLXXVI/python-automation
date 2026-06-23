@@ -10,3 +10,6 @@
 [submodule "packages/python-robot"]
 	path = packages/python-robot
 	url = git@github.com:TomLXXVI/python-robot.git
+[submodule "packages/pyberryplc-cnc"]
+	path = packages/pyberryplc-cnc
+	url = git@github.com:TomLXXVI/pyberryplc-cnc.git
