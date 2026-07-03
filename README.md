@@ -35,29 +35,61 @@ python-automation/
 Each package has its own `pyproject.toml`, `README.md`, source tree, and, where
 available, docs, demos, or tests.
 
-## Cloning
+## Getting Started From Scratch
 
-This workspace tracks the packages as Git submodules.
+### 1. Install Prerequisites
 
-Clone everything in one step:
+Before installing the packages, make sure these tools are available:
+
+- Python `3.10`, `3.11`, or `3.12`;
+- Git;
+- a terminal such as PowerShell, Command Prompt, bash, or a Raspberry Pi shell.
+
+### 2. Clone The Workspace
+
+This repository uses Git submodules for the packages. Clone the workspace with
+submodules in one step:
 
 ```bash
-git clone --recurse-submodules <repository-url>
+git clone --recurse-submodules https://github.com/TomLXXVI/python-automation.git
 cd python-automation
 ```
 
-Or, after cloning an already existing checkout:
+If you already cloned the repository without submodules, run:
 
 ```bash
 git submodule update --init --recursive
 ```
 
-## Installation
+### 3. Create A Virtual Environment
+
+A virtual environment keeps the package dependencies separate from your system
+Python installation.
+
+On Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+```
+
+On Linux, macOS, or Raspberry Pi:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+```
+
+After activation, your terminal prompt usually shows `(.venv)`.
+
+### 4. Install Packages
 
 The packages target Python `>=3.10,<3.13`.
 
-For local development, install packages in editable mode from the repository
-root. A practical full-workspace order is:
+Install packages in editable mode from the repository root. A practical
+full-workspace order is:
 
 ```bash
 python -m pip install -e packages/automation-motion
@@ -67,6 +99,10 @@ python -m pip install -e packages/python-robot
 python -m pip install -e packages/pyberryplc-cnc
 ```
 
+The `-e` option means "editable install": Python imports the package from your
+local source tree. This is useful while developing, because code changes are
+picked up without reinstalling the package.
+
 Install only the packages you need. For example, PLC-only work can start with
 `pyberryplc`, while robotics work usually starts with `automation-motion` and
 `python-robot`.
@@ -75,6 +111,14 @@ For package-specific development dependencies:
 
 ```bash
 python -m pip install -e "packages/<package-name>[dev]"
+```
+
+### 5. Update Submodules Later
+
+When package repositories have changed on GitHub, update the submodules with:
+
+```bash
+git submodule update --remote --merge
 ```
 
 ## Hardware Notes
