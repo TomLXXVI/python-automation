@@ -11,11 +11,11 @@ other for larger automation experiments and demos.
 
 | Package | Purpose |
 | :-- | :-- |
-| [`automation-motion`](packages/automation-motion) | Shared one-dimensional motion profiles and plotting utilities. |
-| [`pyberryplc`](packages/pyberryplc) | SoftPLC framework for Raspberry Pi and software-backed PLC testing. |
-| [`pyberryplc-stepper`](packages/pyberryplc-stepper) | Stepper motor drivers, rotators, TMC2208 UART helpers, and PLC integration tools. |
-| [`pyberryplc-cnc`](packages/pyberryplc-cnc) | CNC adapters that compile Cartesian paths to stepper pulse-train data. |
-| [`python-robot`](packages/python-robot) | Robotics package for frames, transformations, manipulators, motion planning, and visualization. |
+| `automation-motion` | Shared one-dimensional motion profiles and plotting utilities. |
+| `pyberryplc` | SoftPLC framework for Raspberry Pi and software-backed PLC testing. |
+| `pyberryplc-stepper` | Stepper motor drivers, rotators, TMC2208 UART helpers, and PLC integration tools. |
+| `pyberryplc-cnc` | CNC adapters that compile Cartesian paths to stepper pulse-train data. |
+| `python-robot` | Robotics package for frames, transformations, manipulators, motion planning, and visualization. |
 
 ## Repository Layout
 
@@ -94,30 +94,31 @@ See the package-level READMEs and user guides before connecting hardware.
 
 ## Where To Start
 
-- Start with [`automation-motion`](packages/automation-motion) for reusable
+- Start with `automation-motion` for reusable
   one-dimensional motion profiles.
-- Start with [`pyberryplc`](packages/pyberryplc) for PLC-style control logic,
+- Start with `pyberryplc` for PLC-style control logic,
   software-backed I/O, and browser-based test UIs.
-- Add [`pyberryplc-stepper`](packages/pyberryplc-stepper) when a PLC
+- Add `pyberryplc-stepper` when a PLC
   application needs stepper motor motion.
-- Add [`pyberryplc-cnc`](packages/pyberryplc-cnc) for CNC-style XYZ motion
+- Add `pyberryplc-cnc` for CNC-style XYZ motion
   compiled to stepper trajectories.
-- Start with [`python-robot`](packages/python-robot) for robot kinematics,
+- Start with `python-robot` for robot kinematics,
   trajectory planning, and visualization.
 
 ## Documentation
 
-Package documentation is kept close to each package:
+Package documentation is kept close to each package. In a local checkout, start
+with:
 
-- [`packages/pyberryplc/docs/user_guide`](packages/pyberryplc/docs/user_guide)
-- [`packages/pyberryplc-stepper/docs/user_guide`](packages/pyberryplc-stepper/docs/user_guide)
-- [`packages/pyberryplc-cnc/docs`](packages/pyberryplc-cnc/docs)
-- [`packages/python-robot/demos`](packages/python-robot/demos)
+- `packages/pyberryplc/docs/user_guide`
+- `packages/pyberryplc-stepper/docs/user_guide`
+- `packages/pyberryplc-cnc/docs`
+- `packages/python-robot/demos`
 
 The demos are intentionally small and practical. They are useful starting
 points for learning how the packages fit together.
 
 ## License
 
-The workspace and packages use the MIT license. See [`LICENSE.md`](LICENSE.md)
-and package-level license files for details.
+The workspace and packages use the MIT license. See `LICENSE.md` and
+package-level license files for details.
